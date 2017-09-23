@@ -6,7 +6,7 @@ var users = [{
     name: "Nicki",
     email: "nicki8819@gmail.com",
     password: "abcd1234"
-}
+}];
 
 
 module.exports = users;  
