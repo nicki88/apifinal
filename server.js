@@ -20,7 +20,7 @@ router.route('/courses')
 .post(courseController.postCourse)
 .get(courseController.getCourse)
 
-router.route('/courses/:_id')
+router.route('/courses/:id')
 .get(courseController.getCourseById)
 
 app.use('/',router);

@@ -15,7 +15,7 @@ exports.getCourseById= function(req,res){
 	Course.findById(req.params.id,function(err,courses){
 		if (err){			
 		res.send(err);
-		}else {
+		} else {
 			res.json(courses);
 		}
 		});
