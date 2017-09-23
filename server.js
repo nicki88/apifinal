@@ -20,6 +20,9 @@ router.route('/courses')
 .post(courseController.postCourse)
 .get(courseController.getCourse)
 
+router.route('/courses/:_id')
+.get(courseController.getCourseById)
+
 app.use('/',router);
 app.listen (process.env.PORT || 8080);
 

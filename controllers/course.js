@@ -10,6 +10,19 @@ exports.getCourse = function(req,res){
 
 		});
 	}
+
+exports.getCourseById= function(req,res){
+	Course.findById(req.params.id,function(err,courses){
+		if (err){			
+		res.send(err);
+		}else {
+			res.json(courses);
+		}
+		});
+	
+}
+
+
 exports.postCourse=function(req,res){
 	var course = new Course ();
 	course.title=req.body.title;
